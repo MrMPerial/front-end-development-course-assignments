@@ -5,4 +5,26 @@ html{
 body{
     margin:20px auto;
     width:960px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: orange;
+}
+
+td {
+    padding: 15px;
+}
+
+.evenColor {
+    background-color: lightgray;
 }
