@@ -1,1 +1,14 @@
+body {
+    margin: 20px auto;
+    width: 960px;
+}
 
+h1 {
+    border-bottom: 1px solid #777777;
+    color: #777777;
+}
+
+h2 {
+    border-bottom: 1px dashed #AA0000;
+    color: #AA0000;
+}
