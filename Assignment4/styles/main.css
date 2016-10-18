@@ -38,3 +38,19 @@ hr {
     margin: 20px;
     padding: 20px;
 }
+
+.main-content {
+    float: left;
+    width: 70%;
+}
+
+.side-bar {
+    background: #e7e7e7;
+    float: right;
+}
+
+.content-footer {
+    border-top: 1px solid #000000;
+    clear: both;
+    padding-top: 10px;
+}
