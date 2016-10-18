@@ -12,3 +12,17 @@ h2 {
     border-bottom: 1px dashed #AA0000;
     color: #AA0000;
 }
+
+hr {
+    clear: both;
+}
+
+.navigation-link {
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    text-decoration: none;
+}
