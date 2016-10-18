@@ -26,3 +26,15 @@ hr {
     padding: 20px;
     text-decoration: none;
 }
+
+.image-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-image {
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+}
