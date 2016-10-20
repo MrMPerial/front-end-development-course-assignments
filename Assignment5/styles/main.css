@@ -7,3 +7,10 @@ body {
     background-color: #ffffff;
     margin: 20px;
 }
+
+.page-heading user-link {
+    color: #7db9e8;
+    float: right;
+    font-weight: bold;
+    margin-top: 20px;
+}
