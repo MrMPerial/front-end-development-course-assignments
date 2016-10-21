@@ -8,9 +8,29 @@ body {
     margin: 20px;
 }
 
+.page-heading {
+    padding: 20px;
+}
+
 .page-heading user-link {
     color: #7db9e8;
     float: right;
     font-weight: bold;
     margin-top: 20px;
+}
+
+.navigation {
+    background: #1e5799;
+    background: -moz-linear-gradient(top,  #1e5799 0%, #7db9e8 100%);
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+    background: linear-gradient(to bottom,  #1e5799 0%,#7db9e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+    padding: 10px;
+}
+
+.navigation a {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 10px;
 }
