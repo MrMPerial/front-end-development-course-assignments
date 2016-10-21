@@ -12,7 +12,7 @@ body {
     padding: 20px;
 }
 
-.page-heading user-link {
+.page-heading .user-link {
     color: #7db9e8;
     float: right;
     font-weight: bold;
@@ -38,4 +38,35 @@ body {
 .hero {
     background-image: url(../images/hero.jpg);
     width: 100%;
+}
+
+.services {
+    margin-top: 10px;
+}
+
+.service {
+    float: left;
+    padding: 20px;
+    width: 280px;
+}
+
+.service .service-image {
+    background-color: #7db9e8;
+    border-radius: 50%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+
+.service .service-image img {
+    margin-top: 30px;
+}
+
+.service h2 {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
 }
