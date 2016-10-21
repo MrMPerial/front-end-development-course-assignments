@@ -34,3 +34,8 @@ body {
     font-weight: bold;
     margin: 0 10px;
 }
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    width: 100%;
+}
