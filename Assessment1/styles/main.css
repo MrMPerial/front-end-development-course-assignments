@@ -36,6 +36,19 @@ h1, h2, h3, h4, h5 {
     font-style: italic;
 }
 
+.navigation {
+    background-color: #9ad3de;
+    border-bottom: 1px solid #3a3a3a;
+    border-top: 1px solid #3a3a3a;
+}
+
+.navigation a {
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+}
+
 
 .clear{
     clear:both;
