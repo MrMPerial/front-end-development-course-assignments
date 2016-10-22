@@ -21,6 +21,21 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+.main-content {
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #89bdd3;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.header h2 {
+    font-style: italic;
+}
+
 
 .clear{
     clear:both;
