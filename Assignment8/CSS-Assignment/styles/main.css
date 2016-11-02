@@ -7,6 +7,7 @@
 }
 
 body {
+    font-family: 'Shrikhand', cursive;
     margin: 0 auto;
 }
 
@@ -39,8 +40,8 @@ h3 {
 
 img:hover {
     border: 2px solid black;
-    height: 149px;
-    width: 149px;
+    height: 148px;
+    width: 148px;
 }
 
 .imgContainer:hover {
@@ -74,4 +75,43 @@ footer {
 footer nav {
     margin: 0 auto;
     width: 960px;    
+}
+
+/* === Media === */
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0 auto;
+        width: 455px;
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    li {
+        border: 1px solid #fff;
+        display: list-item;
+        padding: 0;
+        padding-left: 10px;
+    }
+    
+    header nav {
+        margin: 0 auto;
+        width: 455px;
+    }
+    
+    section {
+        margin: 0 auto;
+        width: 455px;
+    }
+    
+    .imgContainer {
+        padding: 0 38px;
+    }
+    
+    footer nav {
+        margin: 0 auto;
+        width: 455px;    
+    }
 }
