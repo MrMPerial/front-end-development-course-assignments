@@ -94,6 +94,14 @@ function update() {
         lastNameVal.classList.remove('invalid');
     }
     
+    ///////////////////////////////////////
+    
+    /* Name Validator does not remove lastName "Invalid"
+    Class when firstName is empty. All other works fine.
+    */
+    
+    ///////////////////////////////////////
+    
     // Email Validator
     var emailVal = getElm('emailAddress');
     
