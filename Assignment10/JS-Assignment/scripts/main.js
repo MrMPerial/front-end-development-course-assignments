@@ -77,7 +77,39 @@ function update() {
     // Display Array
     getElm('p4_valid').innerHTML = arrayInput;
     
+    ///////////////////////////////////////
+    
     // Bonus
+    // --------------------
+    
+    // Name Validator
+    var firstNameVal = getElm('firstName');
+    var lastNameVal = getElm('lastName');
+    
+    if ( firstName == false || lastName == false ) {
+        firstNameVal.classList.add('invalid');
+        lastNameVal.classList.add('invalid');
+    } else {
+        firstNameVal.classList.remove('invalid');
+        lastNameVal.classList.remove('invalid');
+    }
+    
+    // Email Validator
+    var emailVal = getElm('emailAddress');
+    
+    if ( emailAddress == false ) {
+        emailVal.classList.add('invalid');
+    } else {
+        emailVal.classList.remove('invalid');
+    }
+    
+    // Number Validator
+    var numberVal = getElm('randomNumber');
+    if ( randomNumber == false ) {
+        numberVal.classList.add('invalid');
+    } else {
+        numberVal.classList.remove('invalid');
+    }
     
 
     ////////////////////////Youre code ends here.
