@@ -5,8 +5,18 @@ function update() {
     ///Part 1
     var firstName = getValue('firstName');
     var lastName = getValue('lastName');
+    var fullName = firstName + " " + lastName;
+    
     console.log(firstName);
     console.log(lastName);
+    
+    getElm('p1_fullName').innerHTML = fullName;
+    
+    if ( firstName != " " && lastName != " " ) {
+        getElm('p1_valid').innerHTML = true;
+    }
+    
+    getElm('p1_fullNameLength').innerHTML = firstName.length + lastName.length;
 
 
 
