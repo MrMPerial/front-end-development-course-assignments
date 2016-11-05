@@ -7,45 +7,78 @@ function update() {
     var lastName = getValue('lastName');
     var fullName = firstName + " " + lastName;
     
+    // Console Logging
     console.log(firstName);
     console.log(lastName);
     
+    // Output Full Name
     getElm('p1_fullName').innerHTML = fullName;
     
-    if ( firstName != " " && lastName != " " ) {
+    // Both Fields
+    if ( firstName != "" && lastName != "" ) {
         getElm('p1_valid').innerHTML = true;
+    } else {
+        getElm('p1_valid').innerHTML = false;
     }
     
+    // Name Length
     getElm('p1_fullNameLength').innerHTML = firstName.length + lastName.length;
 
-
-
-
+    ///////////////////////////////////////
+    
     // Part 2
     var emailAddress = getValue('emailAddress');
+    
+    // Console Logging
     console.log(emailAddress);
+    
+    // Output Email
+    getElm('p2_email').innerHTML = emailAddress;
+    
+    // Verify @ Used
+    if ( emailAddress.indexOf('@') > -1 ) {
+        getElm('p2_valid').innerHTML = true;
+    } else {
+        getElm('p2_valid').innerHTML = false;
+    }
+    
+    // Email Length
+    getElm('p2_emailLength').innerHTML = emailAddress.length;
 
-
+    ///////////////////////////////////////
+    
     // Part 3
     var randomNumber = getValue('randomNumber');
+    
+    // Console Logging
     console.log(randomNumber);
+    
+    // Display Value
+    getElm('p3_number').innerHTML = randomNumber;
+    
+    // Validate value is a number
+    if ( randomNumber >=0 ) {
+        getElm('p3_valid').innerHTML = true;
+    } else {
+        getElm('p3_valid').innerHTML = false;
+    }
 
-
-
+    ///////////////////////////////////////
 
     // Part 4
     var arrayInput = getValue('arrayValue');
+    
+    // Console Logging
     console.log(arrayInput);
-
-
-
-
-
-
-
-
-
-
+    
+    // Array Length
+    getElm('p4_arraylength').innerHTML = arrayInput.length;
+    
+    // Display Array
+    getElm('p4_valid').innerHTML = arrayInput;
+    
+    // Bonus
+    
 
     ////////////////////////Youre code ends here.
 
