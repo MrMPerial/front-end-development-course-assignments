@@ -1,3 +1,152 @@
+/* This kicked my culo for some reason.
+I have changed it three times and I can't 
+seem to get every pixel right below the 
+first clear. 
+*/
+
+/* === Global Settings === */
+
 * {
     box-sizing:border-box;
+}
+
+body {
+    font-family: arial;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 960px;
+}
+
+header {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+img {
+    display: inline-block;
+}
+
+h1 {
+    color: #a00;
+    font-size: 24px;
+}
+
+h2 {
+    border-bottom: 1px solid #a00;
+    border-top: 1px solid #a00;
+    color: #a00;
+    font: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer p {
+    float: left;
+    font-size: 1.35em;
+    font-weight: bold;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav li a {
+    color: #a00;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* === Specific Settings === */
+
+.topNav {
+    background-color: #a00;
+    border-radius: 25px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    padding: 5px;
+    text-align: center;
+}
+
+.topNav li a {    
+    color: #fff;
+    padding: 12px;
+}
+
+.topMain {
+    float: left;
+    padding: 10px;
+    width: 66%;
+}
+
+.topAside {
+    float: right;
+    padding: 10px;
+    width: 33%;
+}
+
+.currentEventPics img {
+    display: inline-block;
+    padding: 10px;
+}
+
+.bottomMain {
+    border-right: 1px solid #a00;
+    float: left;
+    padding-right: 20px;
+    width: 66.6666%;
+}
+
+.bottomMain article {
+    border-bottom: 1px solid #a00;
+    width: 100%;
+}
+
+.bottomMain img {
+    padding: 10px;
+    width: 45%;
+}
+
+.bottomMain .articleText {
+    float: right;
+    width: 55%;
+}
+
+.bottomAside {
+    float: right;
+    width: 33.3333%;
+}
+
+.bottomAside h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.bottomAside ul img {
+    float: left;
+    padding: 10px;
+    width: 50%;
 }
