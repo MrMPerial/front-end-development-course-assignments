@@ -1,4 +1,3 @@
-
 /////////
 //Question 1
 //What is the value of y?
