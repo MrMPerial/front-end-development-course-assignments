@@ -9,38 +9,46 @@
 <body>
 
     <!-- Messages Section -->
-    <section id="message">
+    <section id="messages">
 
     </section>
 
     <!-- Input Section -->
     <section class="inputs">
 
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+        <div class="input-group">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+        </div>
 
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+        <div class="input-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+        </div>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" placeholder="Email">
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="emailAddress" id="emailAddress" placeholder="Email">
+        </div>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password">
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
 
-        <label for="confirm">Confirm Password</label>
-        <input type="password" name="confirm" id="confirm" placeholder="Confirm Password">
+        <div class="input-group">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password">
+        </div>
 
     </section>
 
     <!-- Buttons Section -->
     <section class="control-panel">
-       
-        <!-- <input type="button" value="Update Values" id="btnUpdate" /> -->
 
-        <button type="button">Submit</button>
+        <button type="button" id="btnSubmit">Submit</button>
 
-        <button type="button">Reset</button>
+        <button type="button" id="btnReset">Reset</button>
 
     </section>
 

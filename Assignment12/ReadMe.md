@@ -42,7 +42,7 @@ In your function for submitting the information, write code to check the followi
 - Email is Filled out
 - Email contains an '@' sign
 - Password is filled out
-- Confirm Passowrd is filled out
+- Confirm Password is filled out
 
 Build an array of error messages to display to the user when a rule is violated
 
