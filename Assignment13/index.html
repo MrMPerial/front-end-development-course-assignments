@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <form action="">
+        <!-- Messages Section -->
+        <section id="messages">
+
+        </section>
+
+        <!-- Input Section -->
+        <section class="inputs">
+
+            <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+            </div>
+
+            <div class="input-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="emailAddress" id="emailAddress" placeholder="Email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="input-group">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password">
+            </div>
+
+            <div class="input-group">
+                <label for="zone">Time Zone</label>
+                <br>
+                <select name="zone" id="zone">
+
+                    <option value="0"></option>
+                    <option value="1">Eastern</option>
+                    <option value="2">Central</option>
+                    <option value="3">Mountain</option>
+                    <option value="4">Pacific</option>
+
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="about">Tell us about yourself</label>
+                <textarea name="about" id="about" cols="83" rows="5" placeholder="About"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="terms">Accept Terms and Conditions</label>
+                <input type="checkbox" name="terms" id="terms">
+            </div>
+
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="control-panel">
+
+            <button type="button" id="btnSubmit">Submit</button>
+
+            <button type="button" id="btnReset">Reset</button>
+
+        </section>
+
+    </form>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
