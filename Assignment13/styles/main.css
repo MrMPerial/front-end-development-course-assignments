@@ -58,7 +58,11 @@ body {
     width: 100%;
 }
 
-#terms {
-    float: left;
-    padding: 20px;
+input[type=checkbox] {
+    width:auto;
+}
+
+textarea#about {
+    font-size: 20px;
+    padding-left: 10px;
 }
