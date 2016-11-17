@@ -41,7 +41,7 @@ Update the existing inputs with the HTML attributes outlined below.
     - Change its `type` attribute to `reset`
 
 
-## Step 3
+## Step 4
 Add labels and inputs for the following
 - **Website**
     - Add an input that has its `type` set to `url`
