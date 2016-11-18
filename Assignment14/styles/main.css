@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width:960px;
+    margin:20px auto;
+}
+
+#messages {
+    color: red;
+}
+
+.inputs {
+    border: 1px dashed lightblue;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.input-group {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.input-group input{
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.control-panel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.control-panel #btnSubmit {
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.control-panel #btnReset {
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.invalid {
+    background-color: lightcoral;
+    border: 1px solid red;
+}
+
+.invalid::-webkit-input-placeholder {
+    color: #ff0000;
+}
+
+#zone {
+    height: 45px;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    width:auto;
+}
+
+textarea#about {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.block1 {
+    float: left;
+    width: 49%;
+}
+
+.block2 {
+    float: right;
+    width: 49%;
+}
+
+.clear {
+    clear: both;
+}

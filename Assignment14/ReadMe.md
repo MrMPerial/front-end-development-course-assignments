@@ -46,9 +46,6 @@ Add labels and inputs for the following
 - **Website**
     - Add an input that has its `type` set to `url`
     - Make the input required
-- **Website**
-    - Add an input that has its `type` set to `url`
-    - Make the input required
 - **Age**
     - Add an input that has its `type` set to `number`
     - Make the input required
