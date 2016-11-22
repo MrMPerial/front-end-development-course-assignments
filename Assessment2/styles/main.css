@@ -1,3 +1,178 @@
+/* Color
+
+/////////
+
+#CCCCCC - whiteish
+#AA0000 - redish
+#FFFFFF - white
+#800000 - dark redish
+#999999 - light grayish
+#333333 - dark gray
+
+/////////
+
+*/
+
+/* Global */
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #CCCCCC;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #AA0000;
+    padding-top: 2px;
+}
+
+main {
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: #999999;
+    padding-top: 2px;
+    height: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-left: 20px;
+}
+
+h1, h3, a {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    padding-left: 100px;
+}
+
+h3 {
+    font-style: italic;
+    margin-top: -24px;
+}
+
+p {
+    font-size: 20px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+img {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+li {
+    display: inline;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 35px;
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+}
+
+form button {
+    font-size: 18px;
+}
+
+input {
+    border: 1px solid #800000;
+}
+
+nav input {
+    background-color: #AA0000;
+}
+
+textarea {
+    border-color: #800000;
+}
+
+/* Local */
+
+.clear {
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.navOne {
+    background-color: #800000;
+    padding-top: 2px;
+    height: 40px;
+}
+
+.searchBox {
+    float: right;
+    margin-right: 5px;
+    margin-top: -40px;
+    padding-top: 2px;
+}
+
+.bannerText {
+    float: right;
+    width: 75%;
+}
+
+.navTwo a {
+    color: #333333;
+}
+
+.navTwo li {
+    font-weight: 400;
+    text-transform: none;
+}
+
+.inputGroup label {
+    float: left;
+    font-size: 18px;
+    padding: 10px;
+    width: 30%;
+}
+
+.inputGroup input {
+    float: right;
+    font-size: 18px;
+    padding: 10px;
+    width: 70%;
+}
+
+.buttonsBox {
+    margin-left: 225px;
+}
+
+#hearAbout {
+    border-color: #800000;
+    height: 30px;
+    width: 70%;
 }
