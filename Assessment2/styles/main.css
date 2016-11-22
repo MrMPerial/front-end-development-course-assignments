@@ -113,6 +113,11 @@ nav input {
 
 textarea {
     border-color: #AA0000;
+    margin-left: 7px;
+}
+
+select {
+    font-size: 18px;
 }
 
 /* Local */
@@ -156,25 +161,35 @@ textarea {
 .inputGroup label {
     float: left;
     font-size: 18px;
+    margin: 5px;
     padding: 10px;
-    width: 30%;
+    width: 28%;
 }
 
 .inputGroup input {
     float: right;
     font-size: 18px;
+    margin: 5px;
     padding: 10px;
-    width: 70%;
+    width: 68%;
 }
 
 .buttonsBox {
     margin-left: 225px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 #hearAbout {
-    border-color: #800000;
+    border-color: #AA0000;
     height: 30px;
-    width: 70%;
+    margin-left: 8px;
+    margin-top: 10px;
+    width: 68.5%;
+}
+
+#terms {
+    margin-left: 50px;
 }
 
 /* JavaScript Errors */
