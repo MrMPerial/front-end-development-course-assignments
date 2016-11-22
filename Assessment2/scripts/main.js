@@ -16,7 +16,7 @@ function submit() {
             error.push(element.placeholder + ' Is Required');
             element.classList.add(errorClass);
         } else {
-            firstName.classList.remove(errorClass);
+            element.classList.remove(errorClass);
         }
     }
 
