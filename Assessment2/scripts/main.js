@@ -4,8 +4,19 @@ function submit() {
 
     var error = [];
     var errorClass = 'invalid';
+    var input = ['firstName', 'lastName', 'email', 'explain'];
 
-    if ( firstName.value === '' ) {
+    for ( var index = 0; index < input.length; index++ ) {
+        var element = document.getElementById(input[index]);
+        if ( element.value === '' ) {
+            error.push(element.placeholder + ' Is Required');
+            element.classList.add(errorClass);
+        } else {
+            firstName.classList.remove(errorClass);
+        }
+    }
+
+    /*if ( firstName.value === '' ) {
         error.push(firstName.placeholder + ' Is Required');
         firstName.classList.add(errorClass);
     } else {
@@ -31,7 +42,7 @@ function submit() {
         explain.classList.add(errorClass);
     } else {
         explain.classList.remove(errorClass);
-    }
+    }*/
 
     if ( email.value.indexOf('@') < 0 || email.value.indexOf('.com') < 0 ) {
         error.push("A Valid Email is Required");
