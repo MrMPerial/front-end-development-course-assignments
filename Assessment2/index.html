@@ -8,91 +8,142 @@
 
 <body>
 
-    <header>
+    <div class="container">
 
-        <h1>Bioplex</h1>
-        <p>Fusce a congue nunc. Proin iaculis accumsan mi, eget sodales orci.</p>
+        <header>
 
-    </header>
+            <!-- Top Banner -->
+            <h1>Bioplex</h1>
+            <h3>Fusce a congue nunc. Proin iaculis accumsan mi, eget sodales orci.</h3>
 
-    <nav class="navOne">
 
-        <ul>
-            <li>Home</li>
-            <li>Recipes</li>
-            <li>Products</li>
-            <li>FAQ</li>
-            <li>Contact</li>
-        </ul>
+            <!-- Top Navigation -->
+            <nav class="navOne">
 
-        <input type="search">
-        <button type="button" id="search">Search</button>
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Recipes</li>
+                    </a>
+                    <a href="#">
+                        <li>Products</li>
+                    </a>
+                    <a href="#">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
 
-    </nav>
+                <div class="searchBox">
+                    <input type="search">
+                    <button type="button" id="search">Search</button>
+                </div>
 
-    <section class="infoBanner">
+            </nav>
 
-        <img src="images/blender.jpg" alt="Blender">
+        </header>
 
-        <h2>Blender Sweepstakes</h2>
-        <p>You are about to enter to win a brand new Bioplex SuperMax 1900. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+        <main>
 
-    </section>
+            <!-- Info Banner -->
+            <section class="infoBanner">
 
-    <form>
+                <img src="images/blender.jpg" alt="Blender" class="bannerImg">
 
-        <div class="inputGroup">
-            <label for="firstName">First Name</label>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name">
-        </div>
+                <div class="bannerText">
+                    <h2>Blender Sweepstakes</h2>
+                    <p>You are about to enter to win a brand new Bioplex SuperMax 1900. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+                </div>
 
-        <div class="inputGroup">
-            <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-        </div>
+            </section>
 
-        <div class="inputGroup">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email">
-        </div>
+            <form>
 
-        <div class="inputGroup">
-            <label for="hearAbout">How did you find us?</label>
-            <select name="hearAbout" id="hearAbout">
-                <option value="0">Select One</option>
-                <option value="1">Word Of Mouth</option>
-                <option value="2">Facebook</option>
-            </select>
-        </div>
+                <!-- First Name -->
+                <div class="inputGroup">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                </div>
 
-        <div class="inputGroup">
-            <label for="explain">Why do you need this blender?</label>
-            <textarea name="explain" id="explain" cols="30" rows="10" placeholder="Why do you need this?"></textarea>
-        </div>
+                <!-- Last Name -->
+                <div class="inputGroup">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                </div>
 
-        <div class="inputGroup">
-            <input type="checkbox" name="terms" id="terms">
-            <label for="terms">By checking this box you accept our terms and conditions.</label>
-        </div>
+                <!-- Email -->
+                <div class="inputGroup">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
 
-        <div class="inputGroup">
-            <button id="btnSubmit" type="button">Submit</button>
-            <button type="reset">Reset</button>
-        </div>
+                <!-- Select "Hear About" -->
+                <div class="inputGroup">
+                    <label for="hearAbout">How did you find us?</label>
+                    <select name="hearAbout" id="hearAbout">
+                        <option value="0">Select One</option>
+                        <option value="1">Word Of Mouth</option>
+                        <option value="2">Facebook</option>
+                    </select>
+                </div>
 
-    </form>
+                <!-- Textarea "Explain" -->
+                <div class="inputGroup">
+                    <label for="explain">Why do you need this blender?</label>
+                    <textarea name="explain" id="explain" cols="63" rows="3" placeholder="Why do you need this?"></textarea>
+                </div>
 
-    <nav class="navTwo">
+                <!-- Clear Floats -->
+                <div class="clear"></div>
 
-        <ul>
-            <li>Home</li>
-            <li>Recipes</li>
-            <li>Products</li>
-            <li>FAQ</li>
-            <li>Contact</li>
-        </ul>
+                <!-- Checkbox "Terms" -->
+                <div class="termsBox">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">By checking this box you accept our terms and conditions.</label>
+                </div>
 
-    </nav>
+                <!-- Buttons -->
+                <div class="buttonsBox">
+                    <button id="btnSubmit" type="button">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+
+        </main>
+
+        <footer>
+
+            <!-- Second Navigation -->
+            <nav class="navTwo">
+
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Recipes</li>
+                    </a>
+                    <a href="#">
+                        <li>Products</li>
+                    </a>
+                    <a href="#">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+
+            </nav>
+
+        </footer>
+
+    </div>
 
     <script src="scripts/main.js"></script>
 
