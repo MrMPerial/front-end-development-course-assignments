@@ -2,46 +2,48 @@ document.getElementById('btnSubmit').addEventListener('click', submit);
 
 function submit() {
 
+    var error = [];
+    var errorClass = 'invalid';
+
     if ( firstName.value === '' ) {
-        console.log("firstName is empty");
+        error.push(firstName.placeholder + ' Is Required');
+        firstName.classList.add(errorClass);
     } else {
-        console.log("firstName is not empty");
+        firstName.classList.remove(errorClass);
     }
 
     if ( lastName.value === '' ) {
-        console.log("lastName is empty");
-    } else {
-        console.log("lastName is not empty");
+        error.push(lastName.placeholder + ' Is Required');
     }
 
     if ( email.value === '' ) {
-        console.log("email is empty");
-    } else {
-        console.log("email is not empty");
+        error.push(email.placeholder + ' Is Required');
     }
 
     if ( explain.value === '' ) {
-        console.log("explain is empty");
-    } else {
-        console.log("explain is not empty");
+        error.push('Why You Need This Is Required');
     }
 
     if ( email.value.indexOf('@') < 0 || email.value.indexOf('.com') < 0 ) {
-        console.log("email is Invalid");
-    } else {
-        console.log("email is Valid");
+        error.push("A Valid Email is Required");
     }
 
     if ( hearAbout.value < 1 ) {
-        console.log("hearAbout is Invalid");
-    } else {
-        console.log("hearAbout is Valid");
+        error.push('How You Found Us Is Required');
     }
 
     if ( terms.checked === false ) {
-        console.log("terms is Invalid");
-    } else {
-        console.log("terms is Valid");
+        error.push("You Must Accept The Terms To Submit");
     }
+
+    var html;
+
+    if ( error.length > 0 ) {
+        html = '<ul><li>' + error.join('</li><li>') + '</li></ul>';
+    } else {
+        html = '<h1>Thank you for your submission!</h1>';
+    }
+
+    document.getElementById('errorMessages').innerHTML = html;
 
 }

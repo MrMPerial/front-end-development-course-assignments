@@ -104,7 +104,7 @@ form button {
 }
 
 input {
-    border: 1px solid #800000;
+    border: 1px solid #AA0000;
 }
 
 nav input {
@@ -112,7 +112,7 @@ nav input {
 }
 
 textarea {
-    border-color: #800000;
+    border-color: #AA0000;
 }
 
 /* Local */
@@ -175,4 +175,21 @@ textarea {
     border-color: #800000;
     height: 30px;
     width: 70%;
+}
+
+/* JavaScript Errors */
+
+.invalid {
+    border: 1px solid red;
+}
+
+#errorMessages ul {
+    list-style: initial;
+}
+
+#errorMessages li {
+    color: red;
+    display: list-item;
+    font-weight: normal;
+    text-transform: none;
 }
