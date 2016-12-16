@@ -1,4 +1,47 @@
+/* Colors
+Primary Text - #5A5A5A
+Primary Brand - #AA0000
+Accent Brand - #620010
+*/
+
 * {
     box-sizing: border-box;
 }
 
+.clear {
+    clear: both;
+}
+
+body {
+    background-color: #AA0000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #5A5A5A;
+    //box-shadow: 4px 4px 8px 2px lightgray;
+    color: #5A5A5A;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.title {
+    float: left;
+    padding: 20px;
+    width: 75%;
+}
+
+.avatar {
+    float: right;
+    width: 25%;
+}
