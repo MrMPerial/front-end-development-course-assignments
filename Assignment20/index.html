@@ -33,7 +33,7 @@
                     <a href="https://www.facebook.com/HalluxInc/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
                 </li>
             </ul>
-            
+
             <br class="clear">
 
         </nav>
@@ -125,19 +125,35 @@
 
         <section>
 
-            <form action="">
+            <form action="post">
 
-                <h2>Submit Your Answer</h2>
+                <div id="formAnswer">
 
-                <label for="name">Your Name</label>
-                <input type="text">
+                    <h2>Submit Your Answer</h2>
 
-                <label for="answer">Your Answer</label>
-                <textarea name="answer" id="answer" cols="69" rows="10"></textarea>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name">
+                    
+                    <p class="errMsg1">Your name is required.</p>
 
-                <button>Submit</button>
+                    <label for="answer">Your Answer</label>
+                    <textarea name="answer" id="answer" cols="69" rows="10"></textarea>
+                    
+                    <p class="errMsg2">Your answer is required.</p>
 
-                <button>Reset</button>
+                    <button type="button" id="subBtn">Submit</button>
+
+                    <button type="reset">Reset</button>
+
+                </div>
+
+                <div id="formThanks">
+
+                    <h2>Thank you for your answer!</h2>
+
+                    <button type="button" id="addAnswer">Add Another Answer</button>
+
+                </div>
 
             </form>
 
