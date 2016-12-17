@@ -66,6 +66,7 @@ $(document).ready(function () {
         return prependName;
     }
 
+    // AJAX ??? //
     $.get(qaForm, function(response){
     });
 
@@ -73,7 +74,7 @@ $(document).ready(function () {
         $.post("index.html", {
             name: formName.value,
             answer: formAnswers.value
-        }
+        });
     });
 
 });
