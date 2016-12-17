@@ -124,8 +124,8 @@ aside li {
 
 .answerBlock img {
     float: right;
-    margin-bottom: -50px;
-    margin-right: 80px;
+    //margin-bottom: -50px;
+    //margin-right: 80px;
 }
 
 .aName {
@@ -160,12 +160,7 @@ label {
     padding: 100px;
 }
 
-.errMsg1 {
-    color: #AA0000;
-    display: none;
-}
-
-.errMsg2 {
+.errMsg1, .errMsg2 {
     color: #AA0000;
     display: none;
 }

@@ -62,7 +62,7 @@ $(document).ready(function () {
     }
 
     function updateName() {
-        var prependName = formName.value + ' Responded';
+        var prependName = '<li>' + formName.value + ' Responded</li>';
         return prependName;
     }
 
