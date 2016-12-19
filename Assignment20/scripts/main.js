@@ -3,6 +3,18 @@ $(document).ready(function () {
     var formName = document.getElementById('name');
     var formAnswers = document.getElementById('answer');
 
+    function updateAnswer() {
+        var appendAnswer = '<div class="answerBlock"><p>' + formAnswers.value + '</p><img src="avatar-sam09-8-251.jpg" width="100px" alt="Avatar"><br class="clear"><p class="aName">' + formName.value + '</p></div>';
+        return appendAnswer;
+    }
+
+    function updateName() {
+        var prependName = '<li>' + formName.value + ' Responded</li>';
+        return prependName;
+    }
+
+    $.get(qaForm, function (response) {});
+
     $('input').on('blur', function () {
         if (formName.value === '') {
             $(this).addClass('errors');
@@ -35,13 +47,18 @@ $(document).ready(function () {
         } else {
             $('.errMsg2').fadeOut();
         }
-    });
 
-    $('#subBtn').on('click', function () {
         if (formName.value !== '' && formAnswers.value !== '') {
             $('#formAnswer').slideUp();
             $('#formThanks').slideDown();
+            $('.newAnswer').append(updateAnswer()).slideDown(1000);
+            $('.newName').prepend(updateName()).fadeIn(500);
         }
+
+        $.post("index.html", {
+            name: formName.value,
+            answer: formAnswers.value
+        });
     });
 
     $('#addAnswer').on('click', function () {
@@ -49,32 +66,6 @@ $(document).ready(function () {
         $('#formAnswer').slideDown();
         $('input').val('');
         $('textarea').val('');
-    });
-
-    $('#subBtn').on('click', function () {
-        $('.newAnswer').append(updateAnswer()).slideDown(1000);
-        $('.newName').prepend(updateName()).fadeIn(500);
-    });
-
-    function updateAnswer() {
-        var appendAnswer = '<div class="answerBlock"><p>' + formAnswers.value + '</p><img src="avatar-sam09-8-251.jpg" width="100px" alt="Avatar"><br class="clear"><p class="aName">' + formName.value + '</p></div>';
-        return appendAnswer;
-    }
-
-    function updateName() {
-        var prependName = '<li>' + formName.value + ' Responded</li>';
-        return prependName;
-    }
-
-    // AJAX ??? //
-    $.get(qaForm, function(response){
-    });
-
-    $("subBtn").on('click', function () {
-        $.post("index.html", {
-            name: formName.value,
-            answer: formAnswers.value
-        });
     });
 
 });
