@@ -52,13 +52,13 @@ $(document).ready(function () {
             $('#formAnswer').slideUp();
             $('#formThanks').slideDown();
             $('.newAnswer').append(updateAnswer()).slideDown(1000);
-            $('.newName').prepend(updateName()).fadeIn(500);
+            $('.newName').prepend(updateName()).fadeIn(500);            
+            $.post("index.html", {
+                name: formName.value,
+                answer: formAnswers.value
+            });
         }
-
-        $.post("index.html", {
-            name: formName.value,
-            answer: formAnswers.value
-        });
+        
     });
 
     $('#addAnswer').on('click', function () {
