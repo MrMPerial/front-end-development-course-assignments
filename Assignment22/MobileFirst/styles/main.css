@@ -110,3 +110,88 @@ footer>nav>a {
     padding: 0 10px;
     display:block;
 }
+
+@media screen and (min-width:480px) {
+    .article-list article img {
+        float: left;
+        width: 50%;
+    }
+    
+    .article-list article header, .article-list article p {
+        float: right;
+        width: 50%;
+    }
+    
+    .article-list article {
+        clear: both;
+    }
+}
+
+@media screen and (min-width:620px) {
+    .hero img {
+        max-width: 620px;
+    }
+    
+    .hero {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .article-list article img {
+        max-width: 320px;
+    }
+    
+    .sponsors .sponsor-ads img {
+        width: 25%;
+    }
+    
+    .main-header nav a, footer nav a {
+        display: inline-block;
+    }
+    
+    .main-header nav {
+        text-align: center;
+    }
+    
+    footer nav {
+        float: right;
+    }
+    
+    footer h3 {
+        float: left;
+    }
+}
+
+@media screen and (min-width:840px) {
+    article {
+        float:left;
+        width: 75%;
+    }
+    
+    aside {
+        float: right;
+        width: 25%;
+    }
+    
+    .sponsors .sponsor-ads img {
+        width: 100%;
+    }
+    
+    .article-list {
+        clear: both;
+    }
+    
+    section header {
+        clear: both;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .main-header nav {
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 960px;
+    }
+}
+

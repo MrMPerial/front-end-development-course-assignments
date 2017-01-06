@@ -13,7 +13,8 @@ nav li {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    max-width: 1400px;
 }
 
 a {
@@ -27,12 +28,12 @@ a:hover {
 }
 
 header {
-    background: #a00
+    background: #a00;
 }
 
 footer {
     background: #333;
-    clear: both
+    clear: both;
 }
 
 ul {
@@ -52,7 +53,7 @@ nav li a {
 footer nav,
 header nav,
 section {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto
 }
 
@@ -67,4 +68,33 @@ section {
     border: 2px solid #333;
     display: block;
     margin: 0 auto
+}
+
+@media screen and (max-width:960px) {
+    section h1 {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .image-gallery li {
+        width: 33.3333%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .image-gallery li {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    //.image-gallery li {
+        width: 100%;
+    }
+    
+    nav li {
+        display: block;
+        padding: 10px 0;
+    }
 }
