@@ -1,6 +1,55 @@
+/*
+
+Articles should be 1 column when below 576px
+Articles should be 2 columns when above 576px and below 768px;
+Articles should be 3 columns when above 768px and below 992px;
+Articles should be 4 columns when above 992px and below 1200px;
+Articles should be 6 columns when above 1200px
+
+*/
+
 * {
     box-sizing: border-box
 }
+
 body {
-    margin: 0
+    margin: 0 auto;
+}
+
+article {
+    padding: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .responsive article {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {    
+    .responsive article {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .responsive article {
+        float: left;
+        width: 33.3333%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .responsive article {
+        float: left;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .responsive article {
+        float: left;
+        width: 16.6666%;
+    }
 }
