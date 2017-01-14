@@ -1,0 +1,45 @@
+p {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.logo {
+    background-color: blue;
+    height: 50px;
+}
+
+.navigation {
+    background-color: red;
+    height: 50px;
+}
+
+.news {
+    background-color: green;
+    height: 350px;
+}
+
+.feat1 {
+    background-color: pink;
+    height: 50px;
+}
+
+.feat2 {
+    background-color: brown;
+    height: 50px;
+}
+
+.feat3 {
+    background-color: gray;
+    height: 50px;
+}
+
+.feat4 {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.relCon {
+    background-color: orange;
+    height: 100px;
+}
