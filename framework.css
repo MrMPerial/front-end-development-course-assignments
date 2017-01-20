@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Full Width Container */
+
+.ful {
+    margin: 10px;
+}
+
+
+/* Non-Full Width Container */
+
+.con {
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 100px;
+    width: 80%;
+}
+
+
+/* Row */
+
+.row {
+    clear: both;
+    margin: 3px;
+    padding: 10px;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Mobile Settings */
+
+@media screen and (max-width:768px) {
+    .m25 {
+        float: left;
+        padding: 2px;
+        width: 24%;
+    }
+    .m33 {
+        float: left;
+        padding: 2px;
+        width: 32%;
+    }
+    .m50 {
+        float: left;
+        padding: 2px;
+        width: 49%;
+    }
+    .m75 {
+        float: left;
+        padding: 2px;
+        width: 74%;
+    }
+    .m100 {
+        float: left;
+        padding: 2px;
+        width: 100%;
+    }
+}
+
+
+/* Tablet Settings */
+
+@media screen and (min-width:768px) {
+    .t25 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 24%;
+    }
+    .t33 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 32%;
+    }
+    .t50 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 49%;
+    }
+    .t75 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 74%;
+    }
+    .t100 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 100%;
+    }
+}
+
+
+/* Desktop Settings */
+
+@media screen and (min-width:992px) {
+    .d25 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 24%;
+    }
+    .d33 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 32%;
+    }
+    .d50 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 49%;
+    }
+    .d75 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 74%;
+    }
+    .d100 {
+        float: left;
+        margin: 2px;
+        padding: 4px;
+        width: 100%;
+    }
+}
