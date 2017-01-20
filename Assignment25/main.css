@@ -1,6 +1,12 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
 header {
     background-color: #004E64;
-    height: 60px;
+    height: 100px;
+    position: fixed;
     width: 100%;
 }
 
@@ -13,18 +19,24 @@ a:hover {
     color: black;
 }
 
+nav {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 li {
     display: inline-block;
-    font-size: 2.0em;
+    font-size: 1.8em;
     list-style-type: none;
-    margin-left: 15px;
     padding: 0 20px;
-    padding-top: 10px;
 }
 
 li:hover {
     background-color: #00A5CF;
-    padding-bottom: 13px;
+    margin-top: -35px;
+    padding: 0 20px;
+    padding-bottom: 30px;
+    padding-top: 34px;
 }
 
 .dropdown {
