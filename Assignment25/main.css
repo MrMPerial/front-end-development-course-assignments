@@ -39,6 +39,18 @@ li:hover {
     padding-top: 34px;
 }
 
-.dropdown {
-    display: none;
+#dropdown {
+    background-color: #00A5CF;
+    margin-left: 220px;
+    position: absolute;
+    width: 160px;
+}
+
+#dropdown li {
+    padding: 10px;
+}
+
+#dropdown li:hover {
+    margin: 0;
+    padding: 20px;
 }
