@@ -24,6 +24,10 @@ nav {
     max-width: 1200px;
 }
 
+i {
+    display: none;
+}
+
 li {
     display: inline-block;
     font-size: 1.8em;
