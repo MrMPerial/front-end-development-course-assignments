@@ -58,3 +58,5 @@ li:hover {
     margin: 0;
     padding: 20px;
 }
+
+@media screen and (max-width:768px) {}
